@@ -6,7 +6,7 @@ from pathlib import Path
 html = Template(Path("index.html").read_text())
 email = EmailMessage()
 email["from"] = "mallotest.python@outlook.com"
-email["to"] = "mallofrench05@gmail.com"
+email["to"] = # there, add a string containing the mail address you want to send the mail to.
 email["subject"] = "Hello"
 
 email.set_content(html.substitute(name="Tom"), "html")
